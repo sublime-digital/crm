@@ -1,0 +1,79 @@
+<div class="container-fluid">
+
+    <p>
+  <div class="row">
+
+
+
+          <div class="col-md-4">
+
+            <div class="card">
+      <div class="card-header">
+        <i class="bi bi-clock"></i>
+        <h4 style="display:inline;">D I S T R A C T I O N S</h4>
+      </div>
+      <div class="card-body" style="min-height: 150px;max-height: 800px;">
+        <ul>
+          <li *ngFor = "let line of goalDataMorning let i = index">
+              {{line.goal}}
+          </li>
+        </ul>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Write here" (keydown.enter)="handleGoalClickMorning()" [(ngModel)]='goalMorning' aria-label="Write here" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-warning" (click)='handleGoalClickMorning()' type="button">Submit</button>
+            </div>
+          </div>
+      </div>
+    </div>
+          </div>
+
+
+      <div class="col-md-4">
+
+        <div class="card">
+  <div class="card-header">
+    <i class="bi bi-clock"></i>
+    <h4 style="display:inline;">T R I G G E R S</h4>
+  </div>
+  <div class="card-body" style="min-height: 150px;max-height: 800px;">
+    <ul>
+      <li *ngFor = "let line of goalDataAfternoon let i = index">
+          {{line.goal}}
+      </li>
+    </ul>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Write here" (keydown.enter)="handleGoalClickAfternoon()" [(ngModel)]='goalAfternoon' aria-label="Write here" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-warning" (click)='handleGoalClickAfternoon()' type="button">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card">
+  <div class="card-header">
+    <i class="bi bi-clock"></i>
+    <h4 style="display:inline;">C O N C E R N S</h4>
+  </div>
+  <div class="card-body" style="min-height: 150px;max-height: 800px;">
+    <ul>
+      <li *ngFor = "let line of goalDataEvening let i = index">
+          {{line.goal}}
+      </li>
+    </ul>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Write here" (keydown.enter)="handleGoalClickEvening()" [(ngModel)]='goalEvening' aria-label="Write here" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-warning" (click)='handleGoalClickEvening()' type="button">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+  </div>
+
+</div>

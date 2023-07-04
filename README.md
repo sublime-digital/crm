@@ -1,2 +1,3 @@
-# crm
-Butterly CRM app ~ Pro business tools
+# Luminous Dashboard
+
+Plan your days, months & years with Luminous

@@ -1,0 +1,103 @@
+<div class="container-fluid">
+
+    <p>
+  <div class="row">
+
+
+
+          <div class="col-md-4">
+
+              <div class="card">
+              <div class="card-header">
+                <h2>Grid</h2>
+              </div>
+                <div class="card-body" style="min-height: 150px;max-height: 150px;">
+                  <table class="table table-striped table-sm" style="max-height: 250px;">
+                    <thead>
+                      <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Weight</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                  <ul>
+                    <li *ngFor = "let line of weightData let i = index">
+                        {{line.date}}
+                    </li>
+                  </ul>
+                        </td>
+                        <td>
+                    <ul>
+                    <li *ngFor = "let line of weightData let i = index">
+                        {{line.weight}}
+                    </li>
+                  </ul>
+                        </td>
+                        <td>
+                        <div *ngFor = "let line of weightData let i = index">
+                            <span (click)='remove(i)'><i class="bi bi-trash"></i></span>
+                        </div>
+                      </td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+          </div>
+
+
+      <div class="col-md-4">
+
+        <div class="card">
+        <div class="card-header">
+          <h1 class="h2">Dashboard</h1>
+        </div>
+        <div class="card-body" style="min-height: 400px;max-height: 400px;">
+          <!--<p><div echarts [options]="options" class="demo-chart"></div>-->
+        </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card">
+        <div class="card-header">
+          <h2>Weight Data</h2>
+        </div>
+        <div class="card-body" style="min-height: 150px;max-height: 150px;">
+          Start:
+          <button type="button" class="btn btn-info">{{ start }}</button>
+          <p><p>Current:
+          <button type="button" class="btn btn-warning">{{ current }}</button>
+          Target:
+          <button type="button" class="btn btn-success">{{ target }}</button>
+          <p><p>Lost so far:
+          <button type="button" class="btn btn-danger">{{ lost }}</button>
+          Left to lose:
+          <button type="button" class="btn btn-danger">{{ lose }}</button>
+          <!--<p><p>Calories left to burn:
+          <button type="button" class="btn btn-info">{{ calories | number }}</button>
+          Calories burned so far:
+          <button type="button" class="btn btn-success">{{ progress | number }}</button>
+          <p>Miles to Run:
+          <button type="button" class="btn btn-info">{{ miles | number }}</button>
+          Number of 5-Mile Runs:
+          <button type="button" class="btn btn-primary">{{ fiveruns }}</button>
+          Number of 10-Mile Runs:
+          <button type="button" class="btn btn-primary">{{ tenruns }}</button>
+          <p>5 runs per week will take this many weeks:
+          <button type="button" class="btn btn-success">{{ weeks }}</button>
+          months:
+          <button type="button" class="btn btn-info">{{ months }}</button>
+          years:
+          <button type="button" class="btn btn-primary">{{ years }}</button> -->
+        </div>
+      </div>
+
+      </div>
+  </div>
+
+</div>
