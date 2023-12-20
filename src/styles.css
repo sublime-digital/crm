@@ -16,33 +16,33 @@ table {
 }
 
 .dreams {
-  background-image: url("./assets/city.jpg");
+  background-image: url("./assets/monarch.jpg");
   background-repeat: no-repeat;
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-size: 100% auto; /* Resize the background image to 100% auto the entire container */
 }
 
 .gratitude {
-  background-image: url("./assets/city.jpg");
+  background-image: url("./assets/monarch.jpg");
   background-repeat: no-repeat;
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-size: 100% auto; /* Resize the background image to 100% auto the entire container */
 }
 
 .priorities {
-  background-image: url("./assets/city.jpg");
+  background-image: url("./assets/monarch.jpg");
   background-repeat: no-repeat;
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-size: 100% auto; /* Resize the background image to 100% auto the entire container */
 }
 
 .plans {
-  background-image: url("./assets/city.jpg");
+  background-image: url("./assets/monarch.jpg");
   background-repeat: no-repeat;
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-size: 100% auto; /* Resize the background image to 100% auto the entire container */
 }
 
 .today {
-  background-image: url("./assets/city.jpg");
+  background-image: url("./assets/monarch.jpg");
   background-repeat: no-repeat;
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-size: 100% auto; /* Resize the background image to 100% auto the entire container */
 }
 
 /*** Color Changing Background Gradient
